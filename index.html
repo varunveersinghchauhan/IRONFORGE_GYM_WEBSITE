@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRONFORGE | Elite Fitness</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">
+      <span class="brand-iron">IRON</span><span class="brand-forge">FORGE</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#workouts">Workouts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#membership">Membership</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-fire" href="#membership">Join Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO / CAROUSEL ===== -->
+<section id="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="hero-slide slide-1">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <span class="hero-tag">Elite Training</span>
+              <h1 class="hero-title">FORGE YOUR<br><span class="accent-text">GREATEST</span><br>SELF</h1>
+              <p class="hero-sub">Push limits. Break barriers. Transform your body and mind.</p>
+              <div class="hero-btns">
+                <a href="#membership" class="btn btn-fire btn-lg me-3">Start Today</a>
+                <a href="#workouts" class="btn btn-outline-fire btn-lg">View Programs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-2">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <span class="hero-tag">Expert Trainers</span>
+              <h1 class="hero-title">TRAIN WITH<br><span class="accent-text">THE BEST</span><br>IN CLASS</h1>
+              <p class="hero-sub">World-class coaches dedicated to your transformation journey.</p>
+              <div class="hero-btns">
+                <a href="#trainers" class="btn btn-fire btn-lg me-3">Meet Trainers</a>
+                <a href="#about" class="btn btn-outline-fire btn-lg">Our Story</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-3">
+          <div class="hero-overlay"></div>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content">
+              <span class="hero-tag">Exclusive Plans</span>
+              <h1 class="hero-title">UNLIMITED<br><span class="accent-text">ACCESS</span><br>AWAITS</h1>
+              <p class="hero-sub">Premium facilities, zero compromises. Join thousands of members.</p>
+              <div class="hero-btns">
+                <a href="#membership" class="btn btn-fire btn-lg me-3">View Plans</a>
+                <a href="#gallery" class="btn btn-outline-fire btn-lg">See Facility</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-ctrl"><i class="fas fa-chevron-left"></i></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-ctrl"><i class="fas fa-chevron-right"></i></span>
+    </button>
+  </div>
+</section>
+
+<!-- ===== STATS TICKER ===== -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="row text-center g-0">
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-num" data-target="5000">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Active Members</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-num" data-target="25">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Expert Trainers</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Programs</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <span class="stat-num" data-target="12">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Years of Excellence</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <span class="section-eyebrow">Who We Are</span>
+        <h2 class="section-title">WE ARE MORE THAN<br><span class="accent-text">A GYM</span></h2>
+        <p class="section-body">IRONFORGE was built on a singular belief: every person carries the power to reshape their body and their life. Since 2012, we've equipped thousands with the tools, guidance, and environment to do exactly that.</p>
+        <p class="section-body">Our state-of-the-art facility spans 20,000 sq ft of premium equipment, specialized training zones, recovery suites, and an unmatched community of driven individuals.</p>
+        <div class="about-features row g-3 mt-2">
+          <div class="col-6">
+            <div class="feature-chip"><i class="fas fa-dumbbell"></i> Premium Equipment</div>
+          </div>
+          <div class="col-6">
+            <div class="feature-chip"><i class="fas fa-fire"></i> High-Energy Classes</div>
+          </div>
+          <div class="col-6">
+            <div class="feature-chip"><i class="fas fa-heart-pulse"></i> Recovery Zone</div>
+          </div>
+          <div class="col-6">
+            <div class="feature-chip"><i class="fas fa-users"></i> Supportive Community</div>
+          </div>
+        </div>
+        <a href="#membership" class="btn btn-fire mt-4">Become a Member</a>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="about-img-wrap">
+          <div class="about-img-bg"></div>
+          <div class="about-img-main">
+            <div class="about-placeholder">
+              <i class="fas fa-dumbbell fa-5x"></i>
+              <p>State-of-the-Art Facility</p>
+            </div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">12</span>
+            <span class="badge-text">Years of<br>Excellence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRAINERS ===== -->
+<section id="trainers" class="section-pad bg-dark-section">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-eyebrow">Expert Coaching</span>
+      <h2 class="section-title">MEET YOUR<br><span class="accent-text">TRAINERS</span></h2>
+      <p class="section-subtitle">Elite athletes. Certified coaches. Lifelong mentors.</p>
+    </div>
+    <div class="row g-4">
+      <!-- Trainer 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <div class="trainer-placeholder"><i class="fas fa-person fa-4x"></i></div>
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-specialty">Strength & Powerlifting</span>
+            <h4 class="trainer-name">Marcus Stone</h4>
+            <div class="trainer-certs">
+              <span class="cert-badge">NSCA-CPT</span>
+              <span class="cert-badge">CSCS</span>
+            </div>
+            <p class="trainer-bio">15 years of elite coaching. Former national powerlifting champion who now forges champions.</p>
+            <a href="#contact" class="btn btn-trainer">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <!-- Trainer 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <div class="trainer-placeholder female"><i class="fas fa-person-dress fa-4x"></i></div>
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-specialty">HIIT & Cardio</span>
+            <h4 class="trainer-name">Sofia Reyes</h4>
+            <div class="trainer-certs">
+              <span class="cert-badge">ACE-CPT</span>
+              <span class="cert-badge">Spin Pro</span>
+            </div>
+            <p class="trainer-bio">Marathon finisher and HIIT specialist. Her classes redefine what your body thought was possible.</p>
+            <a href="#contact" class="btn btn-trainer">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <!-- Trainer 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <div class="trainer-placeholder"><i class="fas fa-person fa-4x"></i></div>
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-specialty">Yoga & Flexibility</span>
+            <h4 class="trainer-name">Arjun Mehta</h4>
+            <div class="trainer-certs">
+              <span class="cert-badge">RYT-500</span>
+              <span class="cert-badge">Mobility Pro</span>
+            </div>
+            <p class="trainer-bio">Bridging ancient practice with modern performance science for total body harmony.</p>
+            <a href="#contact" class="btn btn-trainer">Book Session</a>
+          </div>
+        </div>
+      </div>
+      <!-- Trainer 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="trainer-card">
+          <div class="trainer-img">
+            <div class="trainer-placeholder female"><i class="fas fa-person-dress fa-4x"></i></div>
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-specialty">Nutrition & Weight Loss</span>
+            <h4 class="trainer-name">Priya Sharma</h4>
+            <div class="trainer-certs">
+              <span class="cert-badge">ACSM-CPT</span>
+              <span class="cert-badge">Nutritionist</span>
+            </div>
+            <p class="trainer-bio">Certified nutritionist and fat-loss coach. She builds sustainable lifestyles, not short-term fixes.</p>
+            <a href="#contact" class="btn btn-trainer">Book Session</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORKOUT PLANS ===== -->
+<section id="workouts" class="section-pad">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-eyebrow">Training Programs</span>
+      <h2 class="section-title">FORGE YOUR<br><span class="accent-text">WORKOUT PLAN</span></h2>
+      <p class="section-subtitle">Science-backed programs designed for real results.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="workout-filters text-center mb-5">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="strength">Strength</button>
+      <button class="filter-btn" data-filter="cardio">Cardio</button>
+      <button class="filter-btn" data-filter="flexibility">Flexibility</button>
+      <button class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+    </div>
+
+    <div class="row g-4" id="workoutGrid">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4 workout-item" data-cat="strength">
+        <div class="workout-card">
+          <div class="workout-img strength-bg">
+            <span class="workout-level">Advanced</span>
+            <div class="workout-icon"><i class="fas fa-dumbbell fa-3x"></i></div>
+          </div>
+          <div class="workout-body">
+            <div class="workout-meta">
+              <span><i class="fas fa-clock"></i> 60 min</span>
+              <span><i class="fas fa-fire"></i> 550 kcal</span>
+              <span><i class="fas fa-signal"></i> Hard</span>
+            </div>
+            <h5 class="workout-title">Power Lifting Pro</h5>
+            <p class="workout-desc">Build raw power with compound lifts. Squat, deadlift, bench — forge a foundation of strength.</p>
+            <a href="#" class="btn btn-workout" data-bs-toggle="modal" data-bs-target="#workoutModal" data-plan="Power Lifting Pro" data-duration="60 min" data-level="Advanced" data-kcal="550" data-desc="A 12-week compound movement program focusing on the big 3 lifts. Includes progressive overload periodization, accessory work, and deload weeks. Perfect for intermediate to advanced lifters wanting to maximize strength gains.">View Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4 workout-item" data-cat="cardio">
+        <div class="workout-card">
+          <div class="workout-img cardio-bg">
+            <span class="workout-level">Beginner</span>
+            <div class="workout-icon"><i class="fas fa-heart-pulse fa-3x"></i></div>
+          </div>
+          <div class="workout-body">
+            <div class="workout-meta">
+              <span><i class="fas fa-clock"></i> 45 min</span>
+              <span><i class="fas fa-fire"></i> 400 kcal</span>
+              <span><i class="fas fa-signal"></i> Medium</span>
+            </div>
+            <h5 class="workout-title">HIIT Inferno</h5>
+            <p class="workout-desc">High-intensity interval training that torches fat and skyrockets your endurance in record time.</p>
+            <a href="#" class="btn btn-workout" data-bs-toggle="modal" data-bs-target="#workoutModal" data-plan="HIIT Inferno" data-duration="45 min" data-level="Beginner" data-kcal="400" data-desc="8-week HIIT program with 20/40 work-rest intervals. Alternating upper, lower, and full-body days. Designed to maximize EPOC (afterburn effect) so you keep burning calories hours after your workout ends.">View Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4 workout-item" data-cat="flexibility">
+        <div class="workout-card">
+          <div class="workout-img flex-bg">
+            <span class="workout-level">All Levels</span>
+            <div class="workout-icon"><i class="fas fa-spa fa-3x"></i></div>
+          </div>
+          <div class="workout-body">
+            <div class="workout-meta">
+              <span><i class="fas fa-clock"></i> 50 min</span>
+              <span><i class="fas fa-fire"></i> 250 kcal</span>
+              <span><i class="fas fa-signal"></i> Easy</span>
+            </div>
+            <h5 class="workout-title">Yoga Flow & Restore</h5>
+            <p class="workout-desc">Dynamic yoga sequences to improve mobility, reduce injury risk, and calm the mind.</p>
+            <a href="#" class="btn btn-workout" data-bs-toggle="modal" data-bs-target="#workoutModal" data-plan="Yoga Flow & Restore" data-duration="50 min" data-level="All Levels" data-kcal="250" data-desc="A 6-week progressive yoga program combining vinyasa flow with deep restorative sequences. Focus areas: hip flexibility, spine health, shoulder mobility, and mindful breathing. Great as a standalone or complement to any training program.">View Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-4 workout-item" data-cat="weight-loss">
+        <div class="workout-card">
+          <div class="workout-img loss-bg">
+            <span class="workout-level">Intermediate</span>
+            <div class="workout-icon"><i class="fas fa-scale-balanced fa-3x"></i></div>
+          </div>
+          <div class="workout-body">
+            <div class="workout-meta">
+              <span><i class="fas fa-clock"></i> 55 min</span>
+              <span><i class="fas fa-fire"></i> 600 kcal</span>
+              <span><i class="fas fa-signal"></i> Hard</span>
+            </div>
+            <h5 class="workout-title">Fat Furnace</h5>
+            <p class="workout-desc">A metabolic conditioning program combining resistance training and cardio for maximum fat loss.</p>
+            <a href="#" class="btn btn-workout" data-bs-toggle="modal" data-bs-target="#workoutModal" data-plan="Fat Furnace" data-duration="55 min" data-level="Intermediate" data-kcal="600" data-desc="10-week metabolic conditioning program. Combines resistance circuits with short cardio bursts. Macro-based nutrition guidance included. Expect to lose 8-12 lbs of pure fat in 10 weeks while preserving lean muscle mass.">View Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-6 col-lg-4 workout-item" data-cat="strength">
+        <div class="workout-card">
+          <div class="workout-img strength2-bg">
+            <span class="workout-level">Intermediate</span>
+            <div class="workout-icon"><i class="fas fa-person-running fa-3x"></i></div>
+          </div>
+          <div class="workout-body">
+            <div class="workout-meta">
+              <span><i class="fas fa-clock"></i> 45 min</span>
+              <span><i class="fas fa-fire"></i> 480 kcal</span>
+              <span><i class="fas fa-signal"></i> Medium</span>
+            </div>
+            <h5 class="workout-title">Functional Athlete</h5>
+            <p class="workout-desc">Sport-performance training to build explosive power, agility, and real-world functional strength.</p>
+            <a href="#" class="btn btn-workout" data-bs-toggle="modal" data-bs-target="#workoutModal" data-plan="Functional Athlete" data-duration="45 min" data-level="Intermediate" data-kcal="480" data-desc="A 8-week athletic performance program blending plyometrics, Olympic lifting variations, and agility drills. Designed for athletes wanting to improve on-field performance or anyone wanting a more dynamic training style.">View Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-6 col-lg-4 workout-item" data-cat="cardio">
+        <div class="workout-card">
+          <div class="workout-img cardio2-bg">
+            <span class="workout-level">All Levels</span>
+            <div class="workout-icon"><i class="fas fa-bicycle fa-3x"></i></div>
+          </div>
+          <div class="workout-body">
+            <div class="workout-meta">
+              <span><i class="fas fa-clock"></i> 40 min</span>
+              <span><i class="fas fa-fire"></i> 450 kcal</span>
+              <span><i class="fas fa-signal"></i> Medium</span>
+            </div>
+            <h5 class="workout-title">Cycle & Spin</h5>
+            <p class="workout-desc">Indoor cycling to the beat. Build cardiovascular endurance and leg power in every session.</p>
+            <a href="#" class="btn btn-workout" data-bs-toggle="modal" data-bs-target="#workoutModal" data-plan="Cycle & Spin" data-duration="40 min" data-level="All Levels" data-kcal="450" data-desc="High-energy spin classes synced to music. 5-week program with structured ride plans including climbs, sprints, and endurance intervals. Available for all fitness levels with adjustable resistance. Great for heart health and lower body toning.">View Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEMBERSHIP ===== -->
+<section id="membership" class="section-pad bg-dark-section">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-eyebrow">Pricing</span>
+      <h2 class="section-title">MEMBERSHIP<br><span class="accent-text">PLANS</span></h2>
+      <p class="section-subtitle">No hidden fees. No excuses. Just results.</p>
+    </div>
+
+    <!-- Toggle -->
+    <div class="billing-toggle text-center mb-5">
+      <span class="toggle-label">Monthly</span>
+      <div class="form-check form-switch d-inline-block mx-3">
+        <input class="form-check-input" type="checkbox" id="billingToggle">
+        <label class="form-check-label" for="billingToggle"></label>
+      </div>
+      <span class="toggle-label">Annual <span class="save-badge">Save 20%</span></span>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Basic -->
+      <div class="col-md-6 col-lg-4">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="plan-icon"><i class="fas fa-seedling"></i></div>
+            <h4 class="plan-name">Starter</h4>
+            <p class="plan-tagline">Perfect for beginners</p>
+          </div>
+          <div class="pricing-body">
+            <div class="price-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-num" data-monthly="999" data-annual="799">999</span>
+              <span class="price-period">/mo</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Gym Floor Access</li>
+              <li><i class="fas fa-check"></i> Locker Room</li>
+              <li><i class="fas fa-check"></i> 2 Group Classes/Week</li>
+              <li><i class="fas fa-check"></i> Basic App Access</li>
+              <li class="disabled"><i class="fas fa-times"></i> Personal Trainer</li>
+              <li class="disabled"><i class="fas fa-times"></i> Nutrition Plan</li>
+              <li class="disabled"><i class="fas fa-times"></i> Recovery Suite</li>
+            </ul>
+            <a href="#contact" class="btn btn-plan">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro (Popular) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="pricing-card pricing-featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <div class="plan-icon"><i class="fas fa-bolt"></i></div>
+            <h4 class="plan-name">Pro</h4>
+            <p class="plan-tagline">For serious athletes</p>
+          </div>
+          <div class="pricing-body">
+            <div class="price-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-num" data-monthly="1999" data-annual="1599">1999</span>
+              <span class="price-period">/mo</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Full Gym Access 24/7</li>
+              <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+              <li><i class="fas fa-check"></i> 4 PT Sessions/Month</li>
+              <li><i class="fas fa-check"></i> Custom Workout Plan</li>
+              <li><i class="fas fa-check"></i> Nutrition Guidance</li>
+              <li><i class="fas fa-check"></i> Premium App Access</li>
+              <li class="disabled"><i class="fas fa-times"></i> Recovery Suite</li>
+            </ul>
+            <a href="#contact" class="btn btn-plan-fire">Join Pro</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elite -->
+      <div class="col-md-6 col-lg-4">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="plan-icon"><i class="fas fa-crown"></i></div>
+            <h4 class="plan-name">Elite</h4>
+            <p class="plan-tagline">The complete experience</p>
+          </div>
+          <div class="pricing-body">
+            <div class="price-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-num" data-monthly="3499" data-annual="2799">3499</span>
+              <span class="price-period">/mo</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Everything in Pro</li>
+              <li><i class="fas fa-check"></i> Unlimited PT Sessions</li>
+              <li><i class="fas fa-check"></i> Full Nutrition Plan</li>
+              <li><i class="fas fa-check"></i> Recovery Suite Access</li>
+              <li><i class="fas fa-check"></i> Priority Booking</li>
+              <li><i class="fas fa-check"></i> Body Composition Analysis</li>
+              <li><i class="fas fa-check"></i> Guest Passes (3/mo)</li>
+            </ul>
+            <a href="#contact" class="btn btn-plan">Go Elite</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY / IMAGE SLIDER ===== -->
+<section id="gallery" class="section-pad">
+  <div class="container-fluid px-0">
+    <div class="section-header text-center mb-5 px-3">
+      <span class="section-eyebrow">Our Facility</span>
+      <h2 class="section-title">THE <span class="accent-text">FORGE</span></h2>
+      <p class="section-subtitle">20,000 sq ft of pure performance.</p>
+    </div>
+
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="gallery-row">
+            <div class="gallery-item g1"><div class="gal-inner"><i class="fas fa-dumbbell fa-3x"></i><p>Weight Room</p></div></div>
+            <div class="gallery-item g2"><div class="gal-inner"><i class="fas fa-heart-pulse fa-3x"></i><p>Cardio Zone</p></div></div>
+            <div class="gallery-item g3"><div class="gal-inner"><i class="fas fa-spa fa-3x"></i><p>Yoga Studio</p></div></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="gallery-row">
+            <div class="gallery-item g4"><div class="gal-inner"><i class="fas fa-bicycle fa-3x"></i><p>Spin Studio</p></div></div>
+            <div class="gallery-item g5"><div class="gal-inner"><i class="fas fa-swimming-pool fa-3x"></i><p>Recovery Pool</p></div></div>
+            <div class="gallery-item g6"><div class="gal-inner"><i class="fas fa-utensils fa-3x"></i><p>Nutrition Bar</p></div></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="carousel-ctrl dark"><i class="fas fa-chevron-left"></i></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="carousel-ctrl dark"><i class="fas fa-chevron-right"></i></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section-pad bg-dark-section" id="testimonials">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-eyebrow">Success Stories</span>
+      <h2 class="section-title">REAL PEOPLE,<br><span class="accent-text">REAL RESULTS</span></h2>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"IRONFORGE changed my life. In 6 months I lost 22 kg and gained confidence I never thought I'd have. The trainers genuinely care about your progress."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user-circle fa-2x"></i></div>
+              <div>
+                <strong>Rahul Verma</strong>
+                <span>Lost 22 kg in 6 months</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The best investment I've ever made in myself. Sofia's HIIT classes are intense but addictive. The community keeps you accountable every single day."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user-circle fa-2x"></i></div>
+              <div>
+                <strong>Ananya Singh</strong>
+                <span>Pro Member, 1 year</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Marcus helped me deadlift 2x my bodyweight in just 4 months. The programming here is elite. This isn't just a gym — it's a performance lab."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user-circle fa-2x"></i></div>
+              <div>
+                <strong>Kabir Malhotra</strong>
+                <span>Elite Member, 2 years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls text-center mt-4">
+        <button class="testimonial-btn" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><i class="fas fa-arrow-left"></i></button>
+        <button class="testimonial-btn" data-bs-target="#testimonialCarousel" data-bs-slide="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-5">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">START YOUR<br><span class="accent-text">JOURNEY</span></h2>
+        <p class="section-body">Ready to transform? Book a free trial session or drop us a message — we'll get back to you within 24 hours.</p>
+        <div class="contact-info">
+          <div class="contact-item"><i class="fas fa-location-dot"></i><span>12 Forge Street, Industrial Zone, Jaipur, Rajasthan 302001</span></div>
+          <div class="contact-item"><i class="fas fa-phone"></i><span>+91 98765 43210</span></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i><span>info@ironforge.fit</span></div>
+          <div class="contact-item"><i class="fas fa-clock"></i><span>Mon–Fri: 5AM–11PM &nbsp;|&nbsp; Sat–Sun: 6AM–10PM</span></div>
+        </div>
+        <div class="social-links mt-4">
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control forge-input" placeholder="John Doe" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control forge-input" placeholder="john@email.com" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control forge-input" placeholder="+91 XXXXX XXXXX" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Interested In</label>
+              <select class="form-select forge-input">
+                <option value="">Select a Plan</option>
+                <option>Starter Plan</option>
+                <option>Pro Plan</option>
+                <option>Elite Plan</option>
+                <option>Personal Training</option>
+                <option>Free Trial</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Your Message</label>
+              <textarea class="form-control forge-input" rows="4" placeholder="Tell us about your fitness goals..."></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-fire btn-lg w-100">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
+            </div>
+          </div>
+        </form>
+        <div id="formSuccess" class="alert alert-success mt-3 d-none">
+          <i class="fas fa-check-circle me-2"></i> Message sent! We'll be in touch within 24 hours.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer" class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <span class="brand-iron">IRON</span><span class="brand-forge">FORGE</span>
+          </div>
+          <p class="footer-about">We forge champions. From the first rep to the final milestone, IRONFORGE is your partner in every lift, every step, every transformation.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="social-icon sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon sm" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon sm" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#workouts">Programs</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-heading">Programs</h6>
+          <ul class="footer-links">
+            <li><a href="#workouts">Power Lifting</a></li>
+            <li><a href="#workouts">HIIT Inferno</a></li>
+            <li><a href="#workouts">Yoga Flow</a></li>
+            <li><a href="#workouts">Fat Furnace</a></li>
+            <li><a href="#workouts">Functional</a></li>
+            <li><a href="#workouts">Spin Class</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-heading">Newsletter</h6>
+          <p class="footer-newsletter-text">Get weekly workout tips, nutrition advice, and exclusive member offers.</p>
+          <div class="newsletter-form">
+            <input type="email" class="form-control forge-input" placeholder="Enter your email" />
+            <button class="btn btn-fire" onclick="handleNewsletter(this)">Subscribe</button>
+          </div>
+          <div class="footer-app-links mt-3">
+            <a href="#" class="app-badge"><i class="fab fa-apple"></i> App Store</a>
+            <a href="#" class="app-badge"><i class="fab fa-google-play"></i> Play Store</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>© 2024 IRONFORGE Elite Fitness. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#">Privacy Policy</a>
+          <span class="mx-2">·</span>
+          <a href="#">Terms of Service</a>
+          <span class="mx-2">·</span>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Workout Modal -->
+<div class="modal fade" id="workoutModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content forge-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPlanName">Plan Name</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-stats row g-3 mb-4">
+          <div class="col-4 text-center">
+            <div class="modal-stat-box">
+              <i class="fas fa-clock"></i>
+              <span id="modalDuration">60 min</span>
+              <p>Duration</p>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="modal-stat-box">
+              <i class="fas fa-fire"></i>
+              <span id="modalKcal">500 kcal</span>
+              <p>Calories</p>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="modal-stat-box">
+              <i class="fas fa-signal"></i>
+              <span id="modalLevel">Advanced</span>
+              <p>Level</p>
+            </div>
+          </div>
+        </div>
+        <p id="modalDesc" class="modal-desc"></p>
+        <a href="#membership" class="btn btn-fire w-100 mt-3" data-bs-dismiss="modal">Get This Plan</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
